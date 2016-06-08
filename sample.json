@@ -1,0 +1,61 @@
+{
+  "name": "United States",
+  "capital": "Washington D.C.",
+  "altSpellings": [
+    "US",
+    "USA",
+    "United States of America"
+  ],
+  "relevance": "3.5",
+  "region": "Americas",
+  "subregion": "Northern America",
+  "translations": {
+    "de": "Vereinigte Staaten von Amerika",
+    "es": "Estados Unidos",
+    "fr": "États-Unis",
+    "ja": "アメリカ合衆国",
+    "it": "Stati Uniti D'America"
+  },
+  "population": 321645000,
+  "latlng": [
+    38,
+    -97
+  ],
+  "demonym": "American",
+  "area": 9629091,
+  "gini": 48,
+  "timezones": [
+    "UTC−12:00",
+    "UTC−11:00",
+    "UTC−10:00",
+    "UTC−09:00",
+    "UTC−08:00",
+    "UTC−07:00",
+    "UTC−06:00",
+    "UTC−05:00",
+    "UTC−04:00",
+    "UTC+10:00",
+    "UTC+12:00"
+  ],
+  "borders": [
+    "CAN",
+    "MEX"
+  ],
+  "nativeName": "United States",
+  "callingCodes": [
+    "1"
+  ],
+  "topLevelDomain": [
+    ".us"
+  ],
+  "alpha2Code": "US",
+  "alpha3Code": "USA",
+  "currencies": [
+    "USD",
+    "USN",
+    "USS"
+  ],
+  "languages": [
+    "en"
+  ]
+}

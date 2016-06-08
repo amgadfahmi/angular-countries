@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <script src="./bower/angular/angular.min.js"></script>
+  <script src="./dist/angular-data-service.js"></script>
+<!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script> -->
+<style type="text/css" media="screen">
+  .code{
+   background:#fcf8b3;
+    border:1px solid #aaa;
+    margin:10px;
+    padding:10px;
+    /*width:330px;*/
+  }
+</style>
+  <script>
+  angular.module("app", ['angular-data-service' ])
+      .run(function($rootScope ,AngularCountriesConfig ) {
+          AngularCountriesConfig.setKey('JzlN8nuEDKmshnOWIoN8SHIlf7Lcp1tNuRNjsn0Q31S8QTRW3t');
+      })
+      .controller('testCtrl', function($http, $scope, AngularCountries) {
+
+
+    $scope.search =  function() {
+      var value = $scope.selected ;
+        var search = $scope.selectedValue;
+        if (value) {
+            switch (value) {
+                case 'all':
+                    AngularCountries.getAll().then(function(result) {
+                        $scope.result = result.data;
+                    });
+                    break;
+                case 'bycode':
+                    AngularCountries.getByCode(search).then(function(result) {
+                        $scope.result = result.data;
+                    });
+                    break;
+                                    case 'bycodes':
+                    AngularCountries.getByCodes(search).then(function(result) {
+                        $scope.result = result.data;
+                    });
+                    break;                                 case 'byname':
+                    AngularCountries.getByName(search).then(function(result) {
+                        $scope.result = result.data;
+                    });
+                    break;
+            }
+            
+        }
+    }
+
+  
+
+    // AngularCountries.getByCode('us').then(function(result) {
+    //   $scope.treedata = result.data ;
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByCodes('ru', 'us').then(function(result) {
+    //   // $scope.treedata = result.data ;
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByName('norge').then(function(result) {
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByCallingCode(971).then(function(result) {
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByCapital('tallin').then(function(result) {
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByCurrency('nok').then(function(result) {
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByLanguage('et').then(function(result) {
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getByRegion('africa').then(function(result) {
+    //     console.log(result.data);
+    // });
+
+    // AngularCountries.getBySubRegion('western asia').then(function(result) {
+    //     console.log(result.data);
+    // });
+
+
+
+  })
+  </script>
+</head>
+<body ng-controller="testCtrl">
+ <h1>Angular Countries</h1>
+
+  <label for="singleSelect"> Get By: </label>
+    <select name="singleSelect" ng-model="selected" style="width:200px;">
+      <option value="all">All</option>
+      <option value="bycode">By Code</option>
+      <option value="bycodes">By Codes</option>
+      <option value="byname">By Name</option>
+    </select>
+
+  <label for="search"> Search Value: </label> <input type="search" name="search"  ng-model="selectedValue" style="width:200px;">  <button type="submit" ng-click="search()"> Search</button>
+  
+  <br>
+  <br>
+<div class="code">
+  {{result}}
+  
+</div>
+
+</code>
+</pre>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "angular-countries",
+  "version": "0.1.0",
+  "description": "This angular module contains different data services, angular countries is a service based on third party api to get information about countries/cities",
+  "keywords": ["angular","api","json","rest","data" , "service"],
+  "authors": [
+    {
+      "name": "Amgad Fahmi",
+      "email": "amgadnady@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "google.com"
+  },
+  "license": "ALv2",
+  "main": [
+    "dist/angular-data-service.js"
+    ],
+  "ignore": [
+    "*.*",
+    "bower",
+    "modules",
+    "node_modules",
+    "src",
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0",
+    "angular-scenario": ">=1.2.0",
+    "angular": ">=1.2.0"
+  }
+}

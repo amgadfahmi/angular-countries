@@ -1,0 +1,36 @@
+{
+  "generator-angular-package": {
+    "props": {
+      "moduleName": "angular-data-service",
+      "description": "This angular module contains different data services ex: countries info ",
+      "gitUrl": "google.com",
+      "keywords": "[\"angular\",\"api\",\"json\",\"rest\",\"data\"]",
+      "license": "Apache 2.0",
+      "author": {
+        "name": "Amgad Fahmi",
+        "email": "amgadnady@gmail.com"
+      },
+      "yourModule": {
+        "original": "angular-data-service",
+        "camelized": "angularDataService",
+        "dasherized": "angular-data-service",
+        "slugified": "angular-data-service",
+        "parts": [
+          "angular",
+          "data",
+          "service"
+        ]
+      },
+      "includeModuleDirectives": false,
+      "includeModuleFilters": true,
+      "includeModuleServices": true,
+      "includeModuleControllers": false,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "moduleDirectory": "modules/angular-data-service",
+      "moduleUnitTestDirectory": "test/unit/angular-data-service",
+      "moduleUnitE2eDirectory": "test/e2e/angular-data-service"
+    }
+  }
+}
