@@ -28,7 +28,7 @@ angular.module("app", ['angular-data-service' ])
 });
 
 ```
-`Note` you need to create an account on mashape.com and get a key in order to start using any of there APIs. The countries API is free, once you have the key place it in the app run as follow 
+`Note` you need to create an account on [mashape.com](https://www.mashape.com) and get a key in order to start using any of there APIs. The countries API is free, once you have the key place it in the app run as follow 
 ```javascript
 app.run(function(AngularCountriesConfig ) {   
 AngularCountriesConfig.setKey('3q21QYEJadmsdhuih44r47fop1xnS4Ljsnovh5gANrn3BT');
